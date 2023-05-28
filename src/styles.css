@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+    display: grid;
+    position: relative;
+    min-height: 100vh;
+    
+  }
+  .footer {
+    margin-top: auto;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+  }
+  .main{
+    margin-bottom: 1em;
+  }
+
+  .header{
+    padding: 1em 0;
+    margin-bottom: 1em;
+  }
