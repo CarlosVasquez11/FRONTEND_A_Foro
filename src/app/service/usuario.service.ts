@@ -20,12 +20,5 @@ returnUserById(id: number): Observable<any>{
   saveUsuarios(request: any): Observable<any>{
     return this.httpClient.post<any>('http://localhost:9000/api/v1/usuario'+'/save',request).pipe(map(res=>res));
   }
-
-  updateUsuarios(request: any): Observable<any>{
-    return this.httpClient.post<any>('http://localhost:9000/api/v1/usuario'+'/update',request).pipe(map(res=>res));
-  }
-
-  deleteUsuarios(id: number): Observable<any>{
-    return this.httpClient.get<any>('http://localhost:9000/api/v1/usuario'+'/delete/'+id).pipe(map(res=>res));
-  }
+  
 }

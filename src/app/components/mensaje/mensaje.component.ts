@@ -83,19 +83,12 @@ export class MensajeComponent implements OnInit {
   )
   }
   loadUserData(){
-    
-    console.log(this.usuario.id_usuario);
     this.usuarioService.returnUserById(this.id).subscribe(resp=>{
       if(resp){
         this.usuario=resp;
       }
     }
-    )/*
-    this.usuario={
-      "id_usuario": 1,
-      "nombre": "carlos",
-      "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tooltyp.com%2F8-beneficios-de-usar-imagenes-en-nuestros-sitios-web%2F&psig=AOvVaw0XPiDi2Z9jY4alqIK1z9g8&ust=1684965031852000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLi7mIK2jP8CFQAAAAAdAAAAABAE"
-      };*/
+    )
   }
 
   saveMensaje (){

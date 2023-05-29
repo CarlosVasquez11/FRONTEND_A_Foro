@@ -19,7 +19,7 @@ export class UsuarioComponent implements OnInit {
       this.formUsuario= new FormGroup({
         id_usuario: new FormControl(''),
         nombre: new FormControl(''),
-        imagen: new FormControl('')
+        apellido: new FormControl('')
 
       }
       )
