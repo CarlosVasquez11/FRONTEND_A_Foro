@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-crud';
+  title='ng-crud';
+  constructor(){
+    localStorage.setItem('contN1', '0');
+    localStorage.setItem('contN2', '0');
+    localStorage.setItem('contN3', '0');
+  }
 }
