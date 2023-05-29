@@ -9,4 +9,6 @@
 .entrada2{
     margin-left:30px;
 }
-
+.puntuacion{
+    justify-content: right;
+}
